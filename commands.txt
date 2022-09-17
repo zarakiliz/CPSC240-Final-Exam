@@ -1,0 +1,26 @@
+;Program: Cuboids 
+;Author: Elizabeth Orellana, Section 07
+;Email: eorellana96@csu.fullerton.edu
+
+
+b cube.cpp:9
+b cube.cpp:13
+b volume.asm:28
+b volume.asm:110
+b volume.asm:131
+b cube.cpp:16
+r
+p/x $rbp //b1
+c
+p/x $rsp //b3
+c
+p/f $xmm15.v2_int64[0] //b4
+c
+p/f $xmm11.v2_int64[0] //b5
+c
+p/f (double*)volume_arr //b2
+c
+x/1xg &volume_arr //b6
+c
+//end
+
